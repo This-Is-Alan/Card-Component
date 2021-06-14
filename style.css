@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+  margin: 0;
+  background-color: rgba(10, 12, 27, 1);
+}
+
+/* Main & Container Styles */
+
+main {
+  padding: 8rem;
+}
+
+.container__wrapper {
+  display: flex;
+}
+
+/* Card Title & Desc Styles */
+
+.card {
+  background-color: rgba(28, 25, 56, 1);
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  width: 50%;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0rem 8rem;
+  color: white;
+}
+
+.card__title-main {
+  font-size: 4.4rem;
+  font-weight: 700;
+  padding: 7rem 0rem 4rem 0rem;
+}
+
+.card__title-desc {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 7rem;
+}
+
+.card__title-main,
+.card__title-desc {
+  display: block;
+}
+
+.card__title-cta {
+  color: rgba(168, 92, 216, 1);
+}
+
+.card__title-desc,
+.card__items-sub {
+  color: rgba(117, 115, 139, 1);
+}
+
+/* Card List Item Styles */
+
+.card__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__items {
+  font-size: 2.6rem;
+  padding: 1rem;
+  list-style: none;
+  font-weight: 700;
+}
+
+.card__items-sub {
+  font-size: 1.8rem;
+  display: block;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+/* Card Image Styles */
+
+.card__img-wrapper {
+  height: 100%;
+  background-color: rgba(124, 67, 161, 1);
+}
+
+.card__img-desktop,
+.card__img-wrapper {
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.card__img-mobile {
+  display: none;
+}
+
+img {
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+
+/* Footer Attribution */
+
+.attribution,
+a {
+  color: white;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 375px) and (max-width: 1320px) {
+  .container__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .card {
+    border-bottom-right-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+  }
+  .card__wrapper {
+    text-align: center;
+    padding: 0rem 3rem 3rem 3rem;
+  }
+  .card__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .card__img-wrapper {
+    width: 50%;
+  }
+  .card__img-mobile,
+  .card__img-wrapper {
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+  }
+  .card__img-desktop {
+    display: none;
+  }
+  .card__img-mobile {
+    display: block;
+  }
+}
