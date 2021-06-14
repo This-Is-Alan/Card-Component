@@ -37,6 +37,7 @@ main {
 .card__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   height: 100%;
   padding: 0rem 8rem;
   color: white;
@@ -93,7 +94,6 @@ main {
 /* Card Image Styles */
 
 .card__img-wrapper {
-  height: 100%;
   background-color: rgba(124, 67, 161, 1);
 }
 
@@ -120,6 +120,7 @@ a {
   color: white;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 /* Media Queries */
@@ -139,7 +140,7 @@ a {
   }
   .card__wrapper {
     text-align: center;
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 1.5rem;
   }
   .card__list {
     display: flex;
@@ -147,7 +148,7 @@ a {
   }
   .card,
   .card__img-wrapper {
-    width: 85vw;
+    width: 80%;
   }
   .card__img-mobile,
   .card__img-wrapper {
